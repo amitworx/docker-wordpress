@@ -42,6 +42,7 @@ services:
           - "8000:80"
       volumes:
           - ./wordpress:/var/www/html
+          - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
       networks:
           - app-network
 
